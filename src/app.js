@@ -1,6 +1,6 @@
 
-angular.module('app', []);
-
+angular.module('app', ['ui.router']);
+require('common/router');
 
 angular.module('app')
   .controller('homeCtrl', ['$scope', function ($scope) {

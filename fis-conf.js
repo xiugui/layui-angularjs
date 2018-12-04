@@ -16,7 +16,12 @@ fis.match("**/*", {
 // fis.match('*.html', {
 //   useMap: true
 // });
-
+fis.match('src/**/*.less', {
+  rExt: '.css', // from .scss to .css
+  parser: fis.plugin('less', {
+    //fis-parser-less option
+  })
+});
 
 fis.match('::package', {
   postpackager: [fis.plugin('loader', {
