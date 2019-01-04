@@ -1,0 +1,35 @@
+<div class="layui-container bg-white login-page page">
+  <div class="title">
+    注册
+  </div>
+  <form class="layui-form" name="layuiForm">
+
+    <div class="layui-form-item">
+      <div class="">
+        <input type="text" name="username" required  lay-verify="required" lay-verType="tips" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="">
+        <input type="password" name="password" required  lay-verify="required" lay-verType="tips" placeholder="请输入密码" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="">
+        <input type="password" name="confirm_password" required  lay-verify="required" lay-verType="tips" placeholder="请再次确认密码" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="">
+        <input type="text" name="phone" required  lay-verify="required|phone" lay-verType="tips" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+
+    <div class="layui-form-item">
+      <div class="layui-btn layui-btn-fluid register-btn" lay-submit lay-filter="formDemo">注册</div>
+    </div>
+    <div class="layui-form-item">
+      <div type="reset" class="layui-btn layui-btn-fluid layui-btn-primary" ui-sref="login">已经有账号？</div>
+    </div>
+  </form>
+</div>

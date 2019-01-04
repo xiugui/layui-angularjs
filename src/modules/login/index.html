@@ -1,0 +1,24 @@
+<div class="layui-container bg-white login-page page">
+  <div class="title">
+    登录
+  </div>
+  <form class="layui-form" name="layuiForm">
+
+    <div class="layui-form-item">
+      <div class="">
+        <input type="text" name="username" required  lay-verify="required" lay-verType="tips" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="">
+        <input type="password" name="password" required  lay-verify="required" lay-verType="tips" placeholder="请输入密码" autocomplete="off" class="layui-input">
+      </div>
+    </div>
+    <div class="layui-form-item">
+      <div class="layui-btn layui-btn-fluid register-btn" lay-submit lay-filter="formDemo">登录</div>
+    </div>
+    <div class="layui-form-item">
+      <div type="reset" class="layui-btn layui-btn-fluid layui-btn-primary" ui-sref="register">还没有账号？</div>
+    </div>
+  </form>
+</div>

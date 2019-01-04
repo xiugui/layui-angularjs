@@ -1,0 +1,57 @@
+html,body{
+  font: 300 12px/1 'PingFang SC','Microsoft Yahei','Helvetica Neue',Helvetica,STHeitiSC-Light,Arial;
+  //font: 14px PingFang SC,Helvetica Neue,Helvetica,Tahoma,Arial,sans-serif;
+}
+.main-body{
+  background-color: #efefef;
+}
+.bg-white{
+  background-color: #FFF;
+}
+.layui-nav {
+  background: #FFF;
+  .layui-nav-item a {
+    color: #333;
+    &.on {
+      color: #FFF;
+      background: #61BE82;
+    }
+    &:hover {
+      color: #555;
+    }
+    &.active{
+      color: #000;
+    }
+  }
+}
+.layui-nav .layui-this:after{
+  width: 0;
+}
+
+.page{
+  margin-bottom: 20px;
+}
+
+.main-body {
+  position: absolute;
+  top: 60px;
+  bottom: 92px;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.layui-footer {
+  background: #000;
+  color: #fff;
+  height: 92px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  p {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
